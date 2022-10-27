@@ -1,0 +1,258 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.logo{
+z-index: -1;
+background-image: url("hybequote.png");
+background-size: 150px;
+background-repeat: no-repeat;
+display: inline-block;
+height: 80px;
+position: relative;
+text-indent: -9999999px;
+top: -30px;
+left: 30px;
+width: 300px;
+}
+
+
+
+nav{
+  width: 100%;
+  height: 55px;
+
+}
+
+
+
+
+
+
+
+
+
+
+nav ul{
+  float: right;
+}
+
+
+
+
+nav ul li{
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+
+
+
+
+
+
+nav ul li a{
+  display: block;
+  font-family: tahoma;
+  font-weight: bold;
+  color: #000;
+  font-size: 20px;
+  float: left;
+  padding: 30px 25px;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  padding: 25px 20px;
+  z-index: 1;
+}
+
+
+
+
+
+nav ul li ul{
+  display: none;
+  position: absolute;
+}
+
+nav ul li ul:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  z-index: 1;
+}
+
+
+
+
+
+nav ul li:hover ul{
+  border-radius: 7px;
+  display: block;
+  padding: 60px 1px;
+  cursor: pointer;
+}
+
+nav ul li ul li a{
+padding: 20px;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 50%;
+  z-index: -1;
+}
+
+.company{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.bangpdpic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  z-index:-1;
+  border-radius: 7px;
+}
+
+.bandpdname {
+  font-family: tahoma;
+  text-align:center;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.companyinfo {
+  font-family: tahoma;
+  margin-left: 225px;
+  margin-right: 225px;
+  margin-bottom: 50px;
+  text-align: justify;
+  font-size: 19px;
+}
+
+.pdpos{
+  font-size: 15px;
+  font-family: tahoma;
+  text-align:center;
+}
+
+.labels{
+  margin-top: 55px;
+  margin-left: 250px;
+  margin-bottom: 200px;
+  position: relative;
+}
+
+.logos{
+  width: 30%;
+  float: left;
+  padding-right: 50px;
+}
+
+.labelinfo{
+
+  margin-right: 250px;
+  text-align: justify;
+  font-family: tahoma;
+  font-size: 18px;
+}
+
+
+
+.box{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 80%;
+}
+
+.image{
+display: block;
+width: 100%;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-family: tahoma;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.overlay > *{
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.overlay:hover{
+  opacity: 1;
+}
+
+.overlay:hover > *{
+  transform: translateY(0);
+}
+
+.title{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.description{
+  font-size: 1em;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+
+.icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.socialicon{
+  color: gray;
+  transition: color 0.2s;
+  text-decoration: none;
+  font-size: 100px;
+  padding: 20px;
+}
+
+.socialicon:hover{
+color: black;
+}
+
+
+footer {
+  font-family: tahoma;
+  font-weight: bold;
+  text-align:center;
+  color: #000;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
